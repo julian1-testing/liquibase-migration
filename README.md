@@ -1,9 +1,6 @@
 
 #### Scripts to generate an initial liquibase starting changeset from a set of schema defintions and role sql
 
-#### Notes
-  - provisions without chef
-  - provisioning very fast.  39 secs first run,  3 secs subsequent - chef takes ~= 10 minutes
 
 
 #### Usage
