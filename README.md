@@ -25,7 +25,7 @@ cat sql/create-test.sql | psql -h rds -d initial  -U imosadmin
 ```
 
 
-#### To extract src schemas definition and roles
+#### Extracting src schemas definition and roles, talend functions etc
 
 ```
 # dump roles
@@ -34,8 +34,10 @@ sudo -u postgres pg_dumpall --roles-only > roles.sql
 # dump schemas
 sudo -u postgres pg_dump -d harvest -s  > schemas.sql
 
+# imos extension code from https://github.com/aodn/harvest_sql_library/blob/master/extension/imos--1.0.sql
+sql/imos--1.0.sql
 
-# load initial functions, ...
+# initial supporting sql code,
 psql -h rds -d test -U imosadmin -f sql/useful.sql
 
 ```
