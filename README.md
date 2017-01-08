@@ -42,6 +42,23 @@ psql -h rds -d test -U imosadmin -f sql/useful.sql
 
 ```
 
+
+#### Example,
+
+```
+$ psql -h 13.55.70.207 -d test -U imosadmin
+Password for user imosadmin: 
+psql (9.4.5, server 9.6.1)
+WARNING: psql major version 9.4, server major version 9.6.
+         Some psql features might not work.
+SSL connection (protocol: TLSv1.2, cipher: (NONE), bits: -1, compression: off)
+Type "help" for help.
+
+test=> \dn 
+test=> \du 
+```
+
+
 ------
 #### TODO 
 
